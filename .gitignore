@@ -218,3 +218,39 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local credentials and machine-specific configuration
+.env.*
+!.env.example
+config.yaml
+.vscode/
+
+# PayPal runtime state and diagnostics
+subscriptions.db*
+paypal_resource_ids.json
+paypal_plan_creation.lock
+logs/
+*.log
+
+# Local analysis data and user media
+/videos/
+/output/
+*.csv
+
+# Model weights and large generated assets
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.m4v
+
+# Local secrets and OS files
+*.pem
+*.key
+Thumbs.db
+.DS_Store
